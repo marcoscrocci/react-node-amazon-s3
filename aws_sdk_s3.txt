@@ -1,0 +1,17 @@
+File Or Image Uploads on Amazon Web Services ( AWS ) using React, Node and Express JS ( aws-sdk )
+
+https://medium.com/@imranhsayed/file-or-image-uploads-on-amazon-web-services-aws-using-react-node-and-express-js-aws-sdk-252742286162
+
+https://medium.com/@imranhsayed/how-to-create-a-user-and-bucket-amazon-web-services-aws-40631416e65
+
+github: 
+git clone https://github.com/imranhsayed/react-node-boilerplate
+npm cache clean --force
+cd client
+cd ..
+npm cache clean --force
+npm install
+npm i aws-sdk multer-s3 multer path url --save
+
+
+
