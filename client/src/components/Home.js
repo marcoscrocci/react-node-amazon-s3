@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import $ from 'jquery'; class Home extends Component {
+import $ from 'jquery'; 
+
+
+class Home extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -49,7 +52,8 @@ import $ from 'jquery'; class Home extends Component {
 					} else {
 						// Success
 						let fileName = response.data;
-						console.log('fileName', fileName);
+						console.log('fileName', JSON.stringify(fileName));
+						//alert('Nome do arquivo: ', JSON.stringify(fileName));
 						this.ocShowAlert('File Uploaded', '#3089cf');
 					}
 				}
@@ -64,7 +68,8 @@ import $ from 'jquery'; class Home extends Component {
 	};
 
 	multipleFileUploadHandler = () => {
-		const data = new FormData(); let selectedFiles = this.state.selectedFiles;
+		const data = new FormData(); 
+		let selectedFiles = this.state.selectedFiles;
 		// If file selected
 		if (selectedFiles) {
 			for (let i = 0; i < selectedFiles.length; i++) {
